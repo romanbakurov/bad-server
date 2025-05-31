@@ -307,7 +307,7 @@ export const createOrder = async (
         const { address, payment, phone, total, email, items, comment } =
             req.body
         
-        if (phone && !validator.isMobilePhone(phone)) {
+        if (phone && validator.isMobilePhone(phone, 'ru-RU')) {
             throw new BadRequestError('Неверный номер телефона')
         }
         
