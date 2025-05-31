@@ -1,6 +1,8 @@
 import { CookieOptions } from 'express'
 import ms from 'ms'
+import * as process from 'node:process'
 
+export const { ORIGIN_ALLOW = 'http://localhost:5173'} = process.env
 export const { PORT = '3000' } = process.env
 export const { DB_ADDRESS = 'mongodb://127.0.0.1:27017/weblarek' } = process.env
 export const { JWT_SECRET = 'JWT_SECRET' } = process.env
@@ -22,3 +24,6 @@ export const REFRESH_TOKEN = {
         } as CookieOptions,
     },
 }
+
+export const CSRF_SECRET = 'csrfSecret';
+export const CSRF_COOKIE_NAME = 'host-csrf-Token';
