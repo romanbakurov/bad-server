@@ -1,5 +1,5 @@
 # Проектная работа "WebLarek. Плохой сервер.", спринт 17
-[Ссылка на репозиторий](https://github.com/romanbakurov/bad-server)
+https://github.com/romanbakurov/bad-server
 
 ## Подготовка к работе
 1. Склонировать репозиторий
